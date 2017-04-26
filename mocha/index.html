@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <meta charset="utf-8">
+      <title>PrettyError jQuery plugin</title>
+      <link rel="stylesheet" href="../node_modules/mocha/mocha.css">
+      <link rel="stylesheet" href="../dist/styles.min.css">
+   </head>
+   <body>
+      <div id="mocha"></div>
+      <div id="mocha-fixture">
+        <div class="container">
+          <!-- Markup content that has to be test -->
+        </div>
+      </div>
+      <script src="../node_modules/mocha/mocha.js"></script>
+      <script src="../node_modules/chai/chai.js"></script>
+
+      <script>
+        mocha.setup('bdd');
+      </script>
+      <!-- js file to test and test with files -->
+      <script src="../src/prettyFormError.js"></script>
+      <script src="tests.js"></script>
+      <script>
+      mocha.run();
+      </script>
+
+   </body>
+</html>
