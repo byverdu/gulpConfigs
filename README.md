@@ -13,6 +13,7 @@ Collection of gulp tasks and packages with examples to speed up develpment for n
   "gulp-concat": "^2.6.1",
   "gulp-cssnano": "^2.1.2",
   "gulp-notify": "^3.0.0",
+  "gulp-sass": "^3.1.0",
   "gulp-rename": "^1.2.2",
   "gulp-sourcemaps": "^2.6.0",
   "gulp-uglify": "^2.1.2",
