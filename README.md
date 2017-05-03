@@ -8,6 +8,7 @@ Contains tasks for:
 - 🚀 [hot reload by using browser-sync](https://github.com/byverdu/gulpConfigs/blob/master/gulp/tasks/serve.js)
 - 📺 [watch and reload browser-sync](https://github.com/byverdu/gulpConfigs/blob/master/gulp/tasks/watch.js)
 - ☕ [testing frontend with fixtures using mocha](https://github.com/byverdu/gulpConfigs/blob/master/gulp/tasks/bdd-mocha.js)
+- ♊ [tdd with mocha](https://github.com/byverdu/gulpConfigs/blob/master/gulp/tasks/tdd-mocha.js)
 - 🚲 [compile handlebars to html](https://github.com/byverdu/gulpConfigs/blob/master/gulp/tasks/compile-handlebars.js)
 - 🍓 [compile sass](https://github.com/byverdu/gulpConfigs/blob/master/gulp/tasks/sass.js)
 - 😱 [minify js](https://github.com/byverdu/gulpConfigs/blob/master/gulp/tasks/build-js.js)
