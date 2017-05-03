@@ -7,7 +7,8 @@ Contains tasks for:
 - 🐓 [browserify](https://github.com/byverdu/gulpConfigs/blob/master/gulp/tasks/browserify.js)
 - 🚀 [hot reload by using browser-sync](https://github.com/byverdu/gulpConfigs/blob/master/gulp/tasks/serve.js)
 - 📺 [watch and reload browser-sync](https://github.com/byverdu/gulpConfigs/blob/master/gulp/tasks/watch.js)
-- ☕ [testing frontend with fixtures using mocha](https://github.com/byverdu/gulpConfigs/blob/master/gulp/tasks/mocha.js)
+- ☕ [testing frontend with fixtures using mocha](https://github.com/byverdu/gulpConfigs/blob/master/gulp/tasks/bdd-mocha.js)
+- ♊ [tdd with mocha](https://github.com/byverdu/gulpConfigs/blob/master/gulp/tasks/tdd-mocha.js)
 - 🚲 [compile handlebars to html](https://github.com/byverdu/gulpConfigs/blob/master/gulp/tasks/compile-handlebars.js)
 - 🍓 [compile sass](https://github.com/byverdu/gulpConfigs/blob/master/gulp/tasks/sass.js)
 - 😱 [minify js](https://github.com/byverdu/gulpConfigs/blob/master/gulp/tasks/build-js.js)
@@ -23,6 +24,7 @@ Contains tasks for:
   "gulp-compile-handlebars": "^0.6.1",
   "gulp-concat": "^2.6.1",
   "gulp-cssnano": "^2.1.2",
+  "gulp-mocha": "^4.3.1",
   "gulp-notify": "^3.0.0",
   "gulp-sass": "^3.1.0",
   "gulp-rename": "^1.2.2",
