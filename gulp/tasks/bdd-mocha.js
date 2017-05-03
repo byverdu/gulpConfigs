@@ -1,8 +1,19 @@
 const gulp = require( 'gulp' );
+const mocha = require( 'gulp-mocha' );
 const browserSync = require( 'browser-sync' );
 const paths = require( '../paths' );
 
-gulp.task( 'serve-test', ( done ) => {
+const mochaOpts = {
+  ui: 'bdd',
+  compilers: 'js:babel-core/register'
+};
+
+gulp.task( 'test-runner', () => {
+  gulp.src( paths.srcTest )
+    .pipe( mocha( mochaOpts ));
+});
+
+gulp.task( 'serve-test', ['test-runner'], ( done ) => {
   browserSync({
     open: false,
     port: 9000,
