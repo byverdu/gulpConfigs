@@ -13,6 +13,7 @@ Contains tasks for:
 - 🍓 [compile sass](https://github.com/byverdu/gulpConfigs/blob/master/gulp/tasks/sass.js)
 - 😱 [minify js](https://github.com/byverdu/gulpConfigs/blob/master/gulp/tasks/build-js.js)
 - 🍩 [minify and concat css](https://github.com/byverdu/gulpConfigs/blob/master/gulp/tasks/build-css.js)
+- 🌔 [nodemon with express and browserify](https://github.com/byverdu/gulpConfigs/blob/master/gulp/tasks/browserify-express-nodemon.js)
 
 ``` javascript
 "devDependencies": {
@@ -25,6 +26,7 @@ Contains tasks for:
   "gulp-concat": "^2.6.1",
   "gulp-cssnano": "^2.1.2",
   "gulp-mocha": "^4.3.1",
+  "gulp-nodemon": "^2.2.1",
   "gulp-notify": "^3.0.0",
   "gulp-sass": "^3.1.0",
   "gulp-rename": "^1.2.2",
