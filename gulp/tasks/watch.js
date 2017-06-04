@@ -12,4 +12,5 @@ gulp.task( 'watch', () => {
   gulp.watch( paths.srcCss, [ 'build', reload ]).on( 'change', reportChange );
   gulp.watch( './src/handlebars/**', [ 'build', reload ]).on( 'change', reportChange );
   gulp.watch( paths.watchMocha, reload ).on( 'change', reportChange );
+  gulp.watch( paths.watchMocha, [ 'type-check', reload ], ).on( 'change', reportChange );  
 });

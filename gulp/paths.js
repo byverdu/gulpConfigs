@@ -19,5 +19,6 @@ module.exports = {
   destDir: destDir,
   // use for mocha when testing with fixtures in front end
   srcMocha: [ './mocha', './' ],
-  watchMocha: './mocha/*'
+  watchMocha: './mocha/*',
+  processCommand: './node_modules/.bin/flow-remove-types src-dev/ -d src/'
 };

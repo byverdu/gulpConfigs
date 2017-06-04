@@ -1,18 +1,23 @@
-// assumes that flow-remove-types is installed
-const gulp = require('gulp');
-const flow = require('gulp-flowtype');
-const childProcess = require('child_process');
+const gulp = require( 'gulp' );
+const childProcess = require( 'child_process' );
+const paths = require( '../paths' );
+var flowBin = require( 'flow-bin' );
 
 gulp.task( 'type-check', () => {
-  return gulp.src('./src-dev/_file_to_check.js')
-    .pipe(flow({
-      abort: true // exit on first error
-    }))
-    .pipe(gulp.dest('./src'));
+  childProcess.execFile( flowBin, ['check'], ( flowErr, flowStdout, flowStderr ) => {
+    if ( flowErr ) {
+      console.log( flowStdout );
+      return;
+    }
+
+    console.log( flowStdout );
+    childProcess.execSync( paths.processCommand, ( stripErr, stripStdout, stripStderr ) => {
+      if ( stripErr ) {
+        console.log( flowStdout );
+        return;
+      }
+      console.log( stripStdout );
+    });
+  });
 });
 
-gulp.task( 'strip-types', ['type-check'], () => {
-  childProcess.exec('./node_modules/.bin/flow-remove-types -p -o src/file_checked.js src/_file_to_check.js');
-});
-
-gulp.task('flow', ['type-check', 'strip-types']);
