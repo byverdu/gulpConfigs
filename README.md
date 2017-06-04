@@ -26,7 +26,7 @@ Contains tasks for:
   "gulp-compile-handlebars": "^0.6.1",
   "gulp-concat": "^2.6.1",
   "gulp-cssnano": "^2.1.2",
-	"gulp-flowtype": "^1.0.0",
+  "gulp-flowtype": "^1.0.0",
   "gulp-mocha": "^4.3.1",
   "gulp-nodemon": "^2.2.1",
   "gulp-notify": "^3.0.0",

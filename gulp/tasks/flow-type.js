@@ -6,7 +6,7 @@ const childProcess = require('child_process');
 gulp.task( 'type-check', () => {
   return gulp.src('./src-dev/_file_to_check.js')
     .pipe(flow({
-			abort: true // exit on first error
+      abort: true // exit on first error
     }))
     .pipe(gulp.dest('./src'));
 });
