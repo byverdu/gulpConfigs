@@ -15,14 +15,17 @@ Contains tasks for:
 - 🍩 [minify and concat css](https://github.com/byverdu/gulpConfigs/blob/master/gulp/tasks/build-css.js)
 - 🌔 [nodemon with express and browser-sync](https://github.com/byverdu/gulpConfigs/blob/master/gulp/tasks/browserSync-express-nodemon.js)
 - 🌔 [flow, with type checker and strip-types](https://github.com/byverdu/gulpConfigs/blob/master/gulp/tasks/flow-type.js)
+- 🌠 [React](https://github.com/byverdu/gulpConfigs/blob/master/gulp/tasks/react.js)
 
 ``` javascript
 "devDependencies": {
   "babelify": "^7.3.0",
+  "babel-preset-react": "2.4",
   "browser-sync": "^2.18.8",
   "browserify": "^14.3.0",
   "del": "^2.2.2",
   "gulp": "^3.9.1",
+  "gulp-babel": ":)",
   "gulp-compile-handlebars": "^0.6.1",
   "gulp-concat": "^2.6.1",
   "gulp-cssnano": "^2.1.2",
